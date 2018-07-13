@@ -64,7 +64,6 @@ function endGame() {
   }
 
   window.removeEventListener('keydown', moveDodger);
-
   alert('YOU LOSE!');
 }
 
