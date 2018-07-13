@@ -83,7 +83,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var leftNumbers = dodger.style.left.replace('px', '')
+  var leftNumber = positionToInteger(dodger.style.left);
   var left = parseInt(leftNumbers, 10)
 
   function step(){
