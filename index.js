@@ -54,8 +54,6 @@ function createRock(x) {
   ROCKS.push(rock)
 
   return rock
-
-  debugger
 }
 
 function endGame() {
