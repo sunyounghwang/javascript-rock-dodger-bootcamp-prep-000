@@ -84,11 +84,10 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
   var leftNumber = positionToInteger(dodger.style.left);
-  var left = parseInt(leftNumbers, 10)
 
   function step(){
-    if (left > 0) {
-      dodger.style.left = `${left - 4}px`
+    if (leftNumber > 0) {
+      dodger.style.left = `${leftNumber - 4}px`
     }
   }
 
@@ -96,7 +95,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  var leftNumber = positionToInteger(left);
+  var leftNumber = positionToInteger(dodger.style.left);
 
   function step() {
     if (leftNumber < 360) {
