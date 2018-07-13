@@ -51,11 +51,11 @@ function createRock(x) {
 
   window.requestAnimationFrame(moveRock);
 
-  debugger
-
   ROCKS.push(rock)
 
   return rock
+
+  debugger
 }
 
 function endGame() {
