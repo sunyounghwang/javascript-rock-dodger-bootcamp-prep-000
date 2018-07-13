@@ -147,7 +147,6 @@ function moveDodgerRight() {
 
   if (leftNumber < 366) {
     left = `${leftNumber + 4}px`;
-    window.requestionAnimationFrame(moveDodgerRight);
   }
 }
 
