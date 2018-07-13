@@ -96,7 +96,6 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight() {
-  var left = dodger.style.left;
   var leftNumber = positionToInteger(left);
 
   function step() {
