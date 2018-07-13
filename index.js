@@ -146,6 +146,7 @@ function moveDodgerRight() {
   var leftNumber = positionToInteger(left);
 
   if (leftNumber <= 366) {
+    console.log(left)
     left = `${leftNumber + 4}px`;
     console.log(left)
   }
