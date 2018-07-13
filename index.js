@@ -36,7 +36,7 @@ function createRock(x) {
   rock.style.top = top
 
   GAME.appendChild(rock);
-  debugger
+
   function moveRock() {
     rock.style.top = `${top += 2}px`
 
@@ -50,7 +50,7 @@ function createRock(x) {
   }
 
   window.requestAnimationFrame(moveRock);
-
+debugger
   ROCKS.push(rock)
 
   return rock
