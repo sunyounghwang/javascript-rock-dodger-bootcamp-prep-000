@@ -149,8 +149,6 @@ function moveDodgerRight() {
     console.log(left)
     left = `${leftNumber + 4}px`;
   }
-
-  console.log(left)
 }
 
 /**
