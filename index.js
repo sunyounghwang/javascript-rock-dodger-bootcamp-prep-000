@@ -62,7 +62,7 @@ function createRock(x) {
 
     if (checkCollision(rock)) {
         endGame();
-    } else if (rock.style.top < 400) {
+    } else if (rock.style.top < GAME_HEIGHT) {
         moveRock();
     } else {
       rock.remove();
