@@ -83,22 +83,16 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  /*var left = dodger.style.left;
-  var leftNumber = positionToInteger(left);
+  var leftNumbers = dodger.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
 
-  if (left > 0) {
-    left = `${leftNumber - 4}px`;
+  function step(){
+    if (left > 0) {
+      dodger.style.left = `${left - 4}px`
+    }
   }
-}*/
-var leftNumbers = dodger.style.left.replace('px', '')
-var left = parseInt(leftNumbers, 10)
 
-function step(){
-  if (left > 0) {
-    dodger.style.left = `${left - 4}px`
-  }
-}
-window.requestAnimationFrame(step);
+  window.requestAnimationFrame(step);
 }
 
 // implement me!
