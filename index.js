@@ -151,23 +151,18 @@ window.requestAnimationFrame(step);
  * (mabye 4 pixels?). Use window.requestAnimationFrame()!
  */
 function moveDodgerRight() {
-  /*var left = dodger.style.left;
+  var left = dodger.style.left;
   var leftNumber = positionToInteger(left);
 
-  if (leftNumber < 360) {
+  function step() {
+    if (leftNumber < 360) {
     left = `${leftNumber + 4}px`;
   }
-}*/
-var leftNumbers = dodger.style.left.replace('px', '')
-  var left = parseInt(leftNumbers, 10)
-
-  function step(){
-    if (left < 360) {
-      dodger.style.left = `${left + 4}px`
-    }
-  }
-  window.requestAnimationFrame(step);
 }
+
+window.requestAnimationFrame(step);
+}
+
 
 /**
  * @param {string} p The position property
