@@ -49,8 +49,10 @@ function createRock(x) {
     }
   }
 
+  debugger
+
   window.requestAnimationFrame(moveRock);
-debugger
+
   ROCKS.push(rock)
 
   return rock
