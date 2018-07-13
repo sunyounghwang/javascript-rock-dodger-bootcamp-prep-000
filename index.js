@@ -57,8 +57,7 @@ function createRock(x) {
     * we should remove the rock from the DOM
     */
   function moveRock() {
-    var topNum = positionToInteger(rock.style.top);
-    rock.style.top = `${topNum + 2}px`
+    rock.style.top = `${topNum += 2}px`
 
     if (checkCollision(rock)) {
         endGame();
